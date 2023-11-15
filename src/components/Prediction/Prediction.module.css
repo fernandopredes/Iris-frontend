@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+  background-color: #f8ece0;
+  border: #8F6DA0 2px solid;
+  border-radius: 25px;
+  padding: 80px 70px;
+
+}
+
+.leftimage{
+  position: absolute;
+  left: calc(50% - 360px); /* Ajuste 350px para a metade da largura do seu form mais o deslocamento desejado */
+  top: calc(50% + 360px); /* Ajuste 20px para metade da altura do form mais o deslocamento desejado */
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+.rightimage{
+  position: absolute;
+  right: calc(50% - 300px); /* Ajuste 350px para a metade da largura do seu form mais o deslocamento desejado */
+  top: calc(50% + 360px); /* Ajuste 20px para metade da altura do form mais o deslocamento desejado */
+  transform: translate(50%, -50%);
+  max-width: 90%;
+}
+
+.input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  min-width: 234px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #794F93;
+  color: white;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #8F6DA0;
+  text-transform: capitalize;
+}
