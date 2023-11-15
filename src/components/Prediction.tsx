@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { predictIris } from '../api/api';
 import type { IrisFormData } from '../types/IrisFormData';
+import leftImage from '../assets/left.png';
 
 const StyledForm = styled.form`
   display: flex;
@@ -33,6 +34,11 @@ const PredictionResult = styled.div`
   background-color: #f8f9fa;
 `;
 
+const LeftImage = styled.img`
+`
+const RightImage = styled.img`
+`
+
 interface PredictionResponse {
   id: number;
   sepal_length: number;
@@ -62,6 +68,7 @@ const PredictionForm = () => {
   };
 
   return (
+    <>
     <StyledForm onSubmit={handleSubmit}>
       <StyledInput
         type="number"
@@ -98,6 +105,9 @@ const PredictionForm = () => {
       <StyledButton type="submit">Predict Iris Type</StyledButton>
       {prediction && <PredictionResult>Predicted Iris Type: {prediction.predicted_class}</PredictionResult>}
     </StyledForm>
+    {/* <LeftImage src={left} alt=""/> */}
+    <img src={LeftImage} alt="" />
+    </>
   );
 };
 
