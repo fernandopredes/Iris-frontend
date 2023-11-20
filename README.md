@@ -1,54 +1,37 @@
-# Astro Starter Kit: Basics
+# 🌸 Iris Flower Prediction Frontend 🌼
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Introdução
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este projeto é uma aplicação web interativa que realiza previsões sobre o tipo de flor de Íris (Setosa, Versicolor, Virginica) com base em características da flor (comprimento e largura da sépala, comprimento e largura da pétala). Este frontend consome o [Iris Backend](https://github.com/fernandopredes/Iris-backend) para fazer as previsões.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologias 🛠
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Astro:** Utilizado para construir a interface do usuário.
+- **React:** Para componentes interativos.
+- **Axios:** Para chamadas de API ao backend.
 
-## 🚀 Project Structure
+## Pré-Requisitos ✅
 
-Inside of your Astro project, you'll see the following folders and files:
+Antes de começar, certifique-se de ter instalado:
+- [Node.js](https://nodejs.org/en/) (inclui npm)
+- [Astro](https://astro.build/) - pode ser instalado globalmente com `npm install -g astro` após instalar o Node.js
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Como Usar 🚀
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Para executar este projeto localmente:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Clone o repositório:
+   ```bash
+   git clone https://link-para-o-repositorio-frontend.git
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. Instale as dependências:
+   ```bash
+   cd nome-do-repositorio-frontend
+   npm install
+   ```
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
