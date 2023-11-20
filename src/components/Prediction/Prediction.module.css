@@ -16,31 +16,41 @@
   border: #8F6DA0 2px solid;
   border-radius: 25px;
   padding: 80px 70px;
-
 }
 
 .leftimage{
   position: absolute;
-  left: calc(50% - 360px); /* Ajuste 350px para a metade da largura do seu form mais o deslocamento desejado */
-  top: calc(50% + 360px); /* Ajuste 20px para metade da altura do form mais o deslocamento desejado */
+  left: calc(50% - 400px);
+  top: calc(50% + 400px);
   transform: translate(-50%, -50%);
   max-width: 90%;
 }
 
 .rightimage{
   position: absolute;
-  right: calc(50% - 300px); /* Ajuste 350px para a metade da largura do seu form mais o deslocamento desejado */
-  top: calc(50% + 360px); /* Ajuste 20px para metade da altura do form mais o deslocamento desejado */
+  right: calc(50% - 350px);
+  top: calc(50% + 400px);
   transform: translate(50%, -50%);
   max-width: 90%;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  min-width: 120px;
+  color: #333333;
+  margin-right: 10px;
 }
 
 .input {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  flex-grow: 1;
 }
-
 .button {
   min-width: 234px;
   padding: 10px 15px;
@@ -57,4 +67,10 @@
   border-radius: 4px;
   background-color: #8F6DA0;
   text-transform: capitalize;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

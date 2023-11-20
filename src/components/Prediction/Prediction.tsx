@@ -34,42 +34,64 @@ const PredictionForm = () => {
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
+      <div className={styles.inputGroup}>
+        <label htmlFor="sepal_length" className={styles.label}>Sepal Length (cm)</label>
         <input
           type="number"
+          id="sepal_length"
           name="sepal_length"
-          placeholder="Sepal Length (cm)"
+          placeholder="1.75"
           value={formData.sepal_length.toString()}
           onChange={handleChange}
           required
           className={styles.input}
         />
+      </div>
+
+        <div className={styles.inputGroup}>
+        <label htmlFor="sepal_width" className={styles.label}>Sepal Width (cm)</label>
         <input
           type="number"
+          id="sepal_width"
           name="sepal_width"
           value={formData.sepal_width}
+          placeholder="1.25"
           onChange={handleChange}
           required
           className={styles.input}
         />
+        </div>
+        <div className={styles.inputGroup}>
+        <label htmlFor="petal_length" className={styles.label}>Petal Length (cm)</label>
         <input
           type="number"
+          id="petal_length"
           name="petal_length"
+          placeholder="3.25"
           value={formData.petal_length}
           onChange={handleChange}
           required
           className={styles.input}
         />
+        </div>
+        <div className={styles.inputGroup}>
+        <label htmlFor="petal_width" className={styles.label}>Petal Width (cm)</label>
         <input
           type="number"
+          id="petal_width"
           name="petal_width"
+          placeholder="5.25"
           value={formData.petal_width}
           onChange={handleChange}
           required
           className={styles.input}
         />
+        </div>
+
         <button type="submit" className={styles.button}>
           Predict Iris Type
         </button>
+
         {prediction && (
           <div className={styles.result}>
             Predicted Iris Type: {prediction.predicted_class}
